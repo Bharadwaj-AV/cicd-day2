@@ -7,12 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/Bharadwaj-AV/cicd-day2.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
