@@ -19,6 +19,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker rm -f $CONTAINER_NAME || true'
+                    sh 'sleep 3'
                 }
             }
         }
